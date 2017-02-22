@@ -1,0 +1,38 @@
+#ad-head {
+    padding: 10px;
+    text-align: center;
+    display: block;
+}
+
+#ad-head i {
+    display: block;
+    height: 48px;
+    background-image: url(//assets.ournetcdn.net/ournet/img/logos/ournet-logo.png);
+    background-repeat: center center;
+    background-repeat: no-repeat;
+}
+
+#ad-body {
+    display: block;
+    padding: 5px;
+    text-align: center;
+}
+
+#h1 {
+    font-size: 140%;
+    margin: 5px 0px;
+}
+
+@media (min-width: 500px) {
+    #ad-head,
+    #ad-body {
+        display: inline-block;
+        height: 100%;
+    }
+    #ad-head {
+        width: 30%;
+    }
+    #ad-body {
+        width: 70%;
+    }
+}

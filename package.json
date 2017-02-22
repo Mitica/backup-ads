@@ -1,0 +1,28 @@
+{
+  "name": "backup-ads",
+  "version": "0.0.1",
+  "description": "Adsence backup ads",
+  "main": "build.js",
+  "scripts": {
+    "test": "mocha"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/Mitica/backup-ads.git"
+  },
+  "keywords": [
+    "adsense",
+    "ads",
+    "backup-ads"
+  ],
+  "author": "Dumitru Cantea",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/Mitica/backup-ads/issues"
+  },
+  "homepage": "https://github.com/Mitica/backup-ads#readme",
+  "devDependencies": {
+    "bluebird": "^3.4.7",
+    "glob": "^7.1.1"
+  }
+}
