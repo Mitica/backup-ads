@@ -1,3 +1,11 @@
+#ad {
+    background-color: #f2f0ea;
+}
+
+#ad-inner {
+    height: 100%;
+}
+
 #ad-head {
     padding: 10px;
     text-align: center;
@@ -6,9 +14,9 @@
 
 #ad-head i {
     display: block;
-    height: 48px;
-    background-image: url(//assets.ournetcdn.net/ournet/img/logos/ournet-logo.png);
-    background-repeat: center center;
+    height: 100%;
+    background-image: url(https://assets.ournetcdn.net/ournet/img/logos/ournet-logo.png);
+    background-position: center center;
     background-repeat: no-repeat;
 }
 
@@ -24,10 +32,14 @@
 }
 
 @media (min-width: 500px) {
+    #ad-inner {
+        display: table;
+        width: 100%;
+    }
     #ad-head,
     #ad-body {
-        display: inline-block;
-        height: 100%;
+        display: table-cell;
+        vertical-align: middle;
     }
     #ad-head {
         width: 30%;
@@ -35,4 +47,63 @@
     #ad-body {
         width: 70%;
     }
+}
+
+@media (max-width: 500px) {
+    #ad-head {
+        height: 30%;
+    }
+    #ad-body {
+        height: 70%;
+    }
+}
+
+.accent-line {
+    height: 3px;
+}
+
+.accent-line div {
+    height: 3px;
+    width: 10%;
+    float: left
+}
+
+.domain-0 {
+    background-color: #9db49f
+}
+
+.domain-1 {
+    background-color: #e46f61
+}
+
+.domain-2 {
+    background-color: #875f8d
+}
+
+.domain-3 {
+    background-color: #c84697
+}
+
+.domain-4 {
+    background-color: #95b464
+}
+
+.domain-5 {
+    background-color: #2e9b97
+}
+
+.domain-6 {
+    background-color: #db7723
+}
+
+.domain-7 {
+    background-color: #6f85bf
+}
+
+.domain-8 {
+    background-color: #3d80b9
+}
+
+.domain-9 {
+    background-color: #72778c
 }

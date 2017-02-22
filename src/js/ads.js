@@ -85,6 +85,17 @@
 		return;
 	}
 
-	doc.getElementById('ad').innerHTML = ad.html;
+	var url = ad.url[0];
+	if (~url.indexOf('?')) {
+		url += '&';
+	} else {
+		url += '?';
+	}
+
+	url += ['utm_campaign=backup-ads', 'utm_source=' + params.host, 'utm_content=' + encodeURIComponent(ad.name)].join('&');
+
+	var html = '<a id="ad-link" target="_top" href="' + url + '">' + ad.html + '</a>';
+
+	doc.getElementById('ad').innerHTML = html;
 
 })(window.Ads, window.location, document);

@@ -3,10 +3,20 @@ html {
     line-height: 1.15;
     -ms-text-size-adjust: 100%;
     -webkit-text-size-adjust: 100%;
+    height: 100%;
 }
 
 body {
     margin: 0;
+    height: 100%;
+}
+
+*,
+:after,
+:before {
+    -webkit-box-sizing: border-box;
+    -moz-box-sizing: border-box;
+    box-sizing: border-box
 }
 
 a {
@@ -29,6 +39,18 @@ strong {
     font-weight: bolder;
 }
 
-#ad-block {
+#ad {
+    height: 100%;
+}
+
+#ad-link {
     display: block;
+    text-decoration: none;
+    color: inherit;
+    height: 100%;
+}
+
+ins {
+    display: block;
+    height: 100%;
 }

@@ -4,7 +4,8 @@
   "description": "Adsence backup ads",
   "main": "build.js",
   "scripts": {
-    "test": "mocha"
+    "test": "mocha",
+    "build": "DEBUG=* node ./build.js"
   },
   "repository": {
     "type": "git",
@@ -23,6 +24,9 @@
   "homepage": "https://github.com/Mitica/backup-ads#readme",
   "devDependencies": {
     "bluebird": "^3.4.7",
-    "glob": "^7.1.1"
+    "cheerio": "^0.22.0",
+    "debug": "^2.6.1",
+    "glob": "^7.1.1",
+    "html-minifier": "^3.3.3"
   }
 }
