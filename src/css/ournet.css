@@ -60,6 +60,10 @@
 
 .accent-line {
     height: 3px;
+    position: absolute;
+    left: 0px;
+    top: 0px;
+    right: 0px;
 }
 
 .accent-line div {

@@ -5,6 +5,8 @@
 		return;
 	}
 
+	console.log('url', loc.href);
+
 	function getQ(name) {
 		var query = loc.search.substring(1);
 		var vars = query.split('&');
